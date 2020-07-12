@@ -1,0 +1,14 @@
+{
+  "Walk Left" : {
+    "keys" : [
+      "ArrowLeft",
+      "KeyA"
+    ]
+  },
+  "Walk Right" : {
+    "keys" : [
+      "ArrowRight",
+      "KeyD"
+    ]
+  }
+}

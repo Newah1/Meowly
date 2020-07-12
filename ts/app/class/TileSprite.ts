@@ -7,7 +7,7 @@ export class TileSprite extends GameObject{
     constructor(url) {
         super();
         let texture = Texture.from(url);
-        this.set_sprite(new TilingSprite(texture, 100, 100));
+        // this.set_sprite(new TilingSprite(texture, 100, 100));
 
     }
 

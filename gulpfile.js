@@ -21,7 +21,7 @@ function compile_ts() {
         })
             .add(require.resolve('babel-polyfill'))
             .add('ts/main.ts')
-            .plugin(tsify, {target: 'es6', esModuleInterop: true, allowSyntheticDefaultImports: true})
+            .plugin(tsify, {target: 'es6', esModuleInterop: true, allowSyntheticDefaultImports: true, resolveJsonModule: true})
             .transform('babelify', {
                 presets: ['es2015'],
                 extensions: ['.ts'],
