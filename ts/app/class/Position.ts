@@ -29,8 +29,9 @@ export class Position {
 
     set x(x: number) {
         this._x = x;
-        if (this.parent)
+        if (this.parent) {
             this.parent.sprite.x = x;
+        }
     }
 
     get x() : number{

@@ -11,17 +11,24 @@ export class GameObject{
 
     public sheet : Spritesheet;
 
+    public delta_time: number = 0;
+
     constructor() {
+        this.sprite = new Sprite();
         this.position = new Position();
         this.position.set_parent(this);
 
-        this.sprite = new Sprite();
-
-
+        gm.container.addChild(this.sprite);
         gm.application.ticker.add(this.update, this);
+        gm.application.ticker.add(this.update_delta_time, this);
+    }
+
+    update_delta_time(dt : number) {
+        this.delta_time = dt;
     }
 
     update(deltaTime) {
+
     }
 
     set_sheet(sheet: Spritesheet) {
@@ -30,10 +37,10 @@ export class GameObject{
 
 
     set_sprite(texture : Texture){
-        this.sprite = new Sprite(texture);
+        // this.sprite = new Sprite(texture);
+        this.sprite.texture = texture;
 
-        this.sprite.scale.set(2);
-        gm.container.addChild(this.sprite);
+        this.sprite.scale.set(3);
     }
 
 
