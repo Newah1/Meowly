@@ -4,7 +4,9 @@
   "scripts": {
     "start": "nw ."
   },
-  "dependencies": {},
+  "dependencies": {
+    "uglify-js": "^3.10.0"
+  },
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-polyfill": "^6.26.0",
@@ -14,9 +16,11 @@
     "gulp": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-typescript": "^6.0.0-alpha.1",
+    "tinyify": "^2.5.2",
     "tsify": "^4.0.2",
     "typescript": "^3.9.6",
     "vinyl-buffer": "^1.0.1",
-    "vinyl-source-stream": "^2.0.0"
+    "vinyl-source-stream": "^2.0.0",
+    "watchify": "^3.11.1"
   }
 }

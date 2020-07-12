@@ -10,5 +10,17 @@
       "ArrowRight",
       "KeyD"
     ]
+  },
+  "Walk Up" : {
+    "keys" : [
+      "ArrowUp",
+      "KeyW"
+    ]
+  },
+  "Walk Down" : {
+    "keys" : [
+      "ArrowDown",
+      "KeyS"
+    ]
   }
 }
